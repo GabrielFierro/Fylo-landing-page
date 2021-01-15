@@ -1,0 +1,164 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root{
+    --intro-email-background: hsl(217, 28%, 15%);
+    --main-background: hsl(218, 28%, 13%);
+    --footer-background: hsl(216, 53%, 9%);
+    --testimonials-background: hsl(219, 30%, 18%);
+    --cyan-inside-gradient: hsl(217, 28%, 15%);
+    --blue-inside-gradient: hsl(198, 60%, 50%);
+    --red-error: hsl(0, 100%, 63%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+body{
+    background: var(--testimonials-background);
+    color: var(--white-color);
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar, .btn{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    height: 100px;
+    font-weight: 400;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700px;
+    font-size: 40px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+.section{
+    background: var(--main-background);
+}
+
+.logo{
+    width: 180px;
+    height: 55px;
+    background: yellow;
+}
+
+.front{
+    position: relative;
+    z-index: 10;
+}
+
+.btn{
+    width: 240px;
+    height: 45px;
+    background: linear-gradient(to right, hsl(198, 89%, 65%) 1%, var(--blue-inside-gradient) 100%);
+    border-radius: 100px;
+    font-weight: 700;
+    margin-left: 530px;
+    margin-bottom: 400px;
+}
+
+.btn:hover{
+    background: linear-gradient(to right, hsl(198, 94%, 70%) 100%, var(--blue-inside-gradient) 100%);
+}
+
+a:link, a:visited{
+    color: hsl(198, 89%, 65%);
+    text-decoration: underline;
+}
+
+a:hover{
+    color: var(--white-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.card-color{
+    background: var(--testimonials-background);
+    box-shadow: 10px 5px var(--cyan-inside-gradient);
+}
+
+.bg-footer{
+    background: var(--footer-background);
+}
+
+.border-logo{
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.button-background{
+    background: linear-gradient(to right, hsl(198, 89%, 65%) 1%, var(--blue-inside-gradient) 100%);
+}
+
+.email-background{
+    background: var(--intro-email-background);
+}
+
+.button-background:hover{
+    background: linear-gradient(to right, hsl(198, 94%, 70%) 100%, var(--blue-inside-gradient) 100%);
+}
+
+.nav-text{
+    font-size: 16px;
+}
+
+.nav-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fylo-text{
+    display: inline;
+    float: left;
+}
+
+.text-alert{
+    color: var(--red-error);
+}
+
+@media (min-width: 320px) {
+    /* Breakpoint with the background for mobile*/
+    .background{
+        position: absolute;
+        top: 460px;
+        left: 0;
+        z-index: -1;
+        background: url(images/bg-curvy-mobile.svg);
+        background-size: 100% 290px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (min-width: 768px) {
+    /* Breakpoint with the background for desktop*/
+    .background{
+        position: absolute;
+        top: 710px;
+        left: 0;
+        z-index: -1;
+        background: url(images/bg-curvy-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
