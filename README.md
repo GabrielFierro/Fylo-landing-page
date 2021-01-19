@@ -56,3 +56,7 @@ Feedback is always welcome, so if you have any to give on this challenge please 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+
+## Building 
+
+This landind page has available in the next link https://gabrielfierro.github.io/Fylo-landing-page/
