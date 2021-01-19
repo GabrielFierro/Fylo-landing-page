@@ -27,12 +27,6 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 
-.navbar{
-    width: 100%;
-    height: 100px;
-    font-weight: 400;
-}
-
 h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 700px;
@@ -55,22 +49,11 @@ p{
     background: yellow;
 }
 
-.front{
-    position: relative;
-    z-index: 10;
-}
-
-.btn{
-    width: 240px;
-    height: 45px;
+.bg-btn{
     background: linear-gradient(to right, hsl(198, 89%, 65%) 1%, var(--blue-inside-gradient) 100%);
-    border-radius: 100px;
-    font-weight: 700;
-    margin-left: 530px;
-    margin-bottom: 400px;
 }
 
-.btn:hover{
+.bg-btn:hover{
     background: linear-gradient(to right, hsl(198, 94%, 70%) 100%, var(--blue-inside-gradient) 100%);
 }
 
@@ -119,7 +102,7 @@ a:hover{
 }
 
 .nav-text{
-    font-size: 16px;
+    color: white;
 }
 
 .nav-text:hover{
@@ -136,16 +119,20 @@ a:hover{
     color: var(--red-error);
 }
 
-@media (min-width: 320px) {
+@media (max-width: 425px) {
     /* Breakpoint with the background for mobile*/
     .background{
         position: absolute;
-        top: 460px;
+        top: 310px;
         left: 0;
         z-index: -1;
         background: url(images/bg-curvy-mobile.svg);
-        background-size: 100% 290px;
+        background-size: 100% 35%;
         background-repeat: no-repeat;
+    }
+    .section-color{
+        margin-top: 33px;
+        background: var(--main-background);
     }
 }
 
@@ -153,7 +140,7 @@ a:hover{
     /* Breakpoint with the background for desktop*/
     .background{
         position: absolute;
-        top: 710px;
+        top: 700px;
         left: 0;
         z-index: -1;
         background: url(images/bg-curvy-desktop.svg);
