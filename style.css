@@ -87,6 +87,12 @@ a:hover{
     border: 1px solid #FFF;
     border-radius: 50%;
     margin-left: 10px;
+    fill: var(--white-color);
+}
+
+.border-logo:hover{
+    border: 1px solid var(--blue-inside-gradient);
+    fill: var(--blue-inside-gradient);
 }
 
 .button-background{
